@@ -2,8 +2,8 @@
 
 Code accompanying the paper published in *IEEE Open Journal of Vehicular
 Technology* (2025). This repository investigates how pose alignment errors
--- V2X transmission delay, GPS heading error, and LiDAR sensor calibration
-(rotation/translation) error -- degrade a late-fusion vehicle-infrastructure
+(V2X transmission delay, GPS heading error, and LiDAR sensor calibration
+(rotation/translation) error) degrade a late-fusion vehicle-infrastructure
 (V2I) collaborative perception system, using real experimental LiDAR/GPS
 data rather than simulation.
 
@@ -27,13 +27,11 @@ data rather than simulation.
 > and sensor calibration errors.
 
 Two agents are considered: an ego-vehicle (**car**) and a **Fixed Sensor
-Node (FSN)** -- a roadside infrastructure unit with an elevated,
+Node (FSN)** which is a roadside infrastructure unit with an elevated,
 occlusion-resistant view of the scene. Each agent independently detects
 pedestrians with its own LiDAR, and object-level detections are fused into a
 shared global (GPS/ECEF) map (late collaboration). The experiments
-systematically inject each error source in isolation -- transmission delay,
-GPS compass heading error, and LiDAR calibration rotation/translation error
--- and measure the resulting Euclidean displacement between the car's and
+systematically inject each error source in isolation and measure the resulting Euclidean displacement between the car's and
 FSN's detections of the same pedestrian, to quantify how much each error
 degrades map fusion accuracy at different distances from the sensors.
 
@@ -124,8 +122,8 @@ python -m experiments.scenario_3_results
 ```
 
 Most scripts read/write data at hardcoded paths reflecting the original
-capture layout (e.g. `G:/Documents/Pycharm Projects/Work_Package_1/data/...`)
--- update the path constants near the top of each script to point at your
+capture layout (e.g. `G:/Documents/Pycharm Projects/Work_Package_1/data/...`).
+Update the path constants near the top of each script to point at your
 own copy of the data before running.
 
 A handful of near-duplicate per-axis/per-scenario scripts from the original
@@ -142,5 +140,4 @@ python -m lidar_processing.lidar_clustering --format las|pcd --directory <path> 
 
 The paper is published open-access under CC BY 4.0
 (https://creativecommons.org/licenses/by/4.0/). See the paper for full
-terms; no separate code license is specified here -- add one (e.g. MIT) if
-you intend this repository to be reused by others.
+terms.
