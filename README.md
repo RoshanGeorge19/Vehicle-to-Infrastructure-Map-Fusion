@@ -35,39 +35,6 @@ systematically inject each error source in isolation and measure the resulting E
 FSN's detections of the same pedestrian, to quantify how much each error
 degrades map fusion accuracy at different distances from the sensors.
 
-## Citation
-
-If you use this code, please cite the paper:
-
-```bibtex
-@ARTICLE{11087629,
-  author={George, Roshan and Molloy, Dara and Brophy, Tim and O'Grady, William and Mullins, Darragh and Jones, Edward and Deegan, Brian and Glavin, Martin},
-  journal={IEEE Open Journal of Vehicular Technology},
-  title={The Impact of Pose Alignment Errors on a Classical Late Infrastructure-Vehicle Collaboration Framework Using Experimental Data},
-  year={2025},
-  volume={6},
-  number={},
-  pages={2101-2130},
-  keywords={Collaboration;Calibration;Pedestrians;Delays;Safety;Location awareness;Laser radar;Accuracy;Synchronization;Robustness;V2X;V2I;cooperative intelligent transportation systems (C-ITS);map fusion;infrastructure sensing;roadside units;collaborative driving automation},
-  doi={10.1109/OJVT.2025.3591210}}
-```
-
-If you use the G-MIND dataset, please also cite the dataset paper
-([IEEE Xplore](https://ieeexplore.ieee.org/document/11316264)):
-
-```bibtex
-@ARTICLE{11316264,
-  author={Molloy, Dara and George, Roshan and Brophy, Tim and Deegan, Brian and Mullins, Darragh and Ward, Enda and Horgan, Jonathan and Eising, Ciaran and Denny, Patrick and Jones, Edward and Glavin, Martin},
-  journal={IEEE Open Journal of Vehicular Technology},
-  title={G-MIND: Galway Multimodal Infrastructure Node Dataset for Intelligent Transportation Systems},
-  year={2026},
-  volume={7},
-  number={},
-  pages={491-509},
-  keywords={Sensors;Cameras;Pedestrians;Reliability;Thermal sensors;Roads;Laser radar;Collaboration;Automobiles;Vehicle-to-everything;V2X;V2I;cooperative intelligent transportation systems (C-ITS);infrastructure sensing;roadside units;automated mobility;collaborative driving automation},
-  doi={10.1109/OJVT.2025.3648251}}
-```
-
 ## Repository structure
 
 Each `src/` subfolder has its own README describing every script and
@@ -156,6 +123,39 @@ python -m experiments.scenario_3_exp3_rotation --axis x|y|z
 python -m experiments.scenario_3_exp4_translation --axis x|y|z
 python -m geolocalisation.extend_corners_car_parking_spots --corner top-left|bottom-right
 python -m lidar_processing.lidar_clustering --format las|pcd --directory <path> [--visualize]
+```
+
+## Citation
+
+If you use this code, please cite the paper:
+
+```bibtex
+@ARTICLE{11087629,
+  author={George, Roshan and Molloy, Dara and Brophy, Tim and O'Grady, William and Mullins, Darragh and Jones, Edward and Deegan, Brian and Glavin, Martin},
+  journal={IEEE Open Journal of Vehicular Technology},
+  title={The Impact of Pose Alignment Errors on a Classical Late Infrastructure-Vehicle Collaboration Framework Using Experimental Data},
+  year={2025},
+  volume={6},
+  number={},
+  pages={2101-2130},
+  keywords={Collaboration;Calibration;Pedestrians;Delays;Safety;Location awareness;Laser radar;Accuracy;Synchronization;Robustness;V2X;V2I;cooperative intelligent transportation systems (C-ITS);map fusion;infrastructure sensing;roadside units;collaborative driving automation},
+  doi={10.1109/OJVT.2025.3591210}}
+```
+
+If you use the G-MIND dataset, please also cite the dataset paper
+([IEEE Xplore](https://ieeexplore.ieee.org/document/11316264)):
+
+```bibtex
+@ARTICLE{11316264,
+  author={Molloy, Dara and George, Roshan and Brophy, Tim and Deegan, Brian and Mullins, Darragh and Ward, Enda and Horgan, Jonathan and Eising, Ciaran and Denny, Patrick and Jones, Edward and Glavin, Martin},
+  journal={IEEE Open Journal of Vehicular Technology},
+  title={G-MIND: Galway Multimodal Infrastructure Node Dataset for Intelligent Transportation Systems},
+  year={2026},
+  volume={7},
+  number={},
+  pages={491-509},
+  keywords={Sensors;Cameras;Pedestrians;Reliability;Thermal sensors;Roads;Laser radar;Collaboration;Automobiles;Vehicle-to-everything;V2X;V2I;cooperative intelligent transportation systems (C-ITS);infrastructure sensing;roadside units;automated mobility;collaborative driving automation},
+  doi={10.1109/OJVT.2025.3648251}}
 ```
 
 ## License
