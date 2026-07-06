@@ -52,6 +52,22 @@ If you use this code, please cite the paper:
   doi={10.1109/OJVT.2025.3591210}}
 ```
 
+If you use the G-MIND dataset, please also cite the dataset paper
+([IEEE Xplore](https://ieeexplore.ieee.org/document/11316264)):
+
+```bibtex
+@ARTICLE{11316264,
+  author={Molloy, Dara and George, Roshan and Brophy, Tim and Deegan, Brian and Mullins, Darragh and Ward, Enda and Horgan, Jonathan and Eising, Ciaran and Denny, Patrick and Jones, Edward and Glavin, Martin},
+  journal={IEEE Open Journal of Vehicular Technology},
+  title={G-MIND: Galway Multimodal Infrastructure Node Dataset for Intelligent Transportation Systems},
+  year={2026},
+  volume={7},
+  number={},
+  pages={491-509},
+  keywords={Sensors;Cameras;Pedestrians;Reliability;Thermal sensors;Roads;Laser radar;Collaboration;Automobiles;Vehicle-to-everything;V2X;V2I;cooperative intelligent transportation systems (C-ITS);infrastructure sensing;roadside units;automated mobility;collaborative driving automation},
+  doi={10.1109/OJVT.2025.3648251}}
+```
+
 ## Repository structure
 
 Each `src/` subfolder has its own README describing every script and
@@ -72,7 +88,7 @@ function in it.
 
 ## Dataset
 
-Experiments use the **Galway Multi-Modal Infrastructure Node Dataset
+Experiments use the **Galway Multimodal Infrastructure Node Dataset
 (G-MIND)**, collected in an open parking lot with the FSN (3 RGB cameras, an
 event camera, a thermal camera, 2 LiDARs, a radar, and a weather station) and
 an ego-vehicle equipped with a roof-mounted Velodyne VLP-16 LiDAR. Ground
@@ -80,6 +96,12 @@ truth pose was obtained via RTK GPS (EMLID Reach M2, centimetre-level
 accuracy) fused with LiDAR SLAM (LOAM). Only the VLP-16 (car) and Cepton P60
 (FSN) LiDAR data and their manual pedestrian annotations were used for this
 study.
+
+G-MIND is now published as its own dataset paper:
+[G-MIND: Galway Multimodal Infrastructure Node Dataset for Intelligent Transportation Systems](https://ieeexplore.ieee.org/document/11316264)
+(IEEE Open Journal of Vehicular Technology, 2026). The dataset itself can be
+downloaded from
+[IEEE DataPort](https://ieee-dataport.org/documents/galway-multimodal-infrastructure-node-dataset).
 
 Raw and intermediate data (camera frames, LiDAR point clouds, GPS logs,
 ~80GB) are **not included** in this repository. Scripts expect the following
