@@ -1,0 +1,22 @@
+# Raw/processed research data -- not tracked in git, see README for access
+/data/
+
+# Regenerable experiment outputs
+pickles/
+*.pkl
+*.csv
+output_images*/
+png_images/
+*.avi
+*.mp4
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
